@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none; 
+    color: black
+}
+
+body {
+    overflow: hidden
+}
+
+table.lessons {
+    border-collapse: collapse;
+}
+table.lessons, table.lessons td, table.lessons th {
+    border: 3px solid #595959;
+}
+table.lessons td, table.lessons th {
+    text-align: center;
+    width: 200px;
+    height: 80px;
+}
+
+table.iksweb{
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+    font-size: xx-large;
+    table-layout: fixed;
+    width: 90%;
+    margin-left: 5%;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border: 1px solid #595959;
+    text-align: right;
+}
+table.iksweb td,table.iksweb th {
+	padding: 3px;
+	width: 40px;
+	height: 70px;
+}
+table.iksweb th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'main';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url('./FuturaMediumC.ttf')
+}
+
+.sidebarblock {
+    width: 255px;
+    height: 170px;
+    font-size: xx-large;
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    font-family: main;
+}
+
+.sidebarblock:hover {
+    color: #000000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.sidebar {
+    width: 255px;
+    height: 100%;
+    font-size: xx-large;
+    position:fixed;
+    margin-top: 170px;
+    font-family: main;
+    background-color: #A7D942;
+}
+
+
+.sidebartexts {
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 69px;
+}
+
+.sidebartexts:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.text {
+    width: 90%;
+    margin-left: 255px;
+    font-family: main;
+    position: absolute;
+    align-items: center;
+}
+
+.line {
+    border-top: 2px solid #000000;
+}
+
+.lastgame {
+    width: 100%;
+    height: 500px;
+}
+
+.gamehead {
+    text-align: center;
+}
+
+.tempbutton {
+    width:50%;
+    height:100px;
+    font-size: clamp(30px, 4vw, 40px);
+    margin-left: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 70px;
+    outline: 2px solid #000;
+    border-radius: 20px;
+}
+
+.tempbutton:hover {
+    background-color: #A7D942;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+}
+
+.newsblock {
+    width: 100%;
+    height: fit-content;
+    border: 2px normal #000;
+    padding-left: 30px;
+    font-size: clamp(12px, 5vw, 50px);
+    background-color: #f2f2f2;
+}
+
+.date {
+    opacity: 1;
+}
+
+.newstext {
+    font-size: clamp(12px, 5vw, 50px);
+}
+
+.newstext, .newstitle {
+    margin-left: 50px;
+}
+
+.gameteams {
+    font-size: clamp(12px, 6vw, 60px);
+    display: inline;
+    font-size: 1000%;
+}
+
+
+
+@media screen and (max-height: 700px) {
+    .sidebarblock {width: 120px; height: 85px; font-size: large; }
+    .sidebar {width: 120px; height: 100%; margin-top: 85px; font-size: large;}
+    .sidebartexts {margin-left: 10px;margin-top: 20px;height: 20px;margin-bottom: 20px;}
+    .text {margin-left: 120px;}
+    .tempbutton {
+        width:70%;
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+    table.iksweb td,table.iksweb th {
+        padding: 3px;
+        width: 70px;
+        height: 20px;
+    }
+    table.iksweb{
+        border-collapse:collapse;
+        border-spacing:0;
+        height: auto;
+        margin-left: 50px;
+        font-size: large;
+    }
+    .newsblock {
+        width: 100%;
+        height: 100px;
+        border: 2px normal #000;
+        padding-left: 30px;
+        font-size: clamp(12px, 5vw, 50px);
+        background-color: #f2f2f2;
+    }
+    .date {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-height: 701px) and (max-height: 1000px) {
+    .sidebarblock {width: 120px; height: 85px; font-size: large; }
+    .sidebar {width: 120px; height: 100%; margin-top: 85px; font-size: large;}
+    .sidebartexts {margin-left: 10px;margin-top: 25px;height: 30px;margin-bottom: 25px;}
+    .text {margin-left: 120px;}
+    .tempbutton {
+        width:70%;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+    table.iksweb td,table.iksweb th {
+        padding: 3px;
+        width: 70px;
+        height: 20px;
+    }
+    table.iksweb{
+        border-collapse:collapse;
+        border-spacing:0;
+        height: auto;
+        margin-left: 50px;
+        font-size: large;
+    }
+    .newsblock {
+        width: 100%;
+        height: 100px;
+        border: 2px normal #000;
+        padding-left: 30px;
+        font-size: clamp(12px, 5vw, 50px);
+        background-color: #f2f2f2;
+    }
+    
+}
+
+@media screen and (min-height: 1001px) and (min-width: 1000px) {
+    .sidebartexts {margin-left: 10px;margin-top: 25px;height: 40px;margin-bottom: 25px;}
+}
+
